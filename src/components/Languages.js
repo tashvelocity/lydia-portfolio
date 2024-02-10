@@ -47,7 +47,10 @@ export default function Languages({ color }) {
                         <Text fontSize="sm" py={2} whiteSpace="pre-line">
                           {language.description}
                         </Text>
-
+                        <br />
+                        <Text fontSize="sm" py={2} whiteSpace="pre-line">
+                          {language.listDesc}
+                        </Text>
                         <UnorderedList>
                           {language.list.map((list) => (
                             <ListItem

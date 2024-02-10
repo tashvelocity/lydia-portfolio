@@ -15,6 +15,7 @@ const parseLanguages = (mdContent) => {
       while (lines[++i] && !lines[i].startsWith("- List:")) {
         description += lines[i].trim() + "\n";
       }
+      const listDesc = lines[++i].trim();
       while (lines[++i] && lines[i].startsWith("  - ")) {
         const listLine = lines[i].split("- ");
         const listText = listLine[1].trim();
@@ -25,7 +26,8 @@ const parseLanguages = (mdContent) => {
         name,
         tags: [tags],
         description,
-        list
+        list,
+        listDesc
       });
     }
   }
