@@ -87,7 +87,7 @@ export default function Nav({ color }) {
         w="100%"
       >
         <Link onClick={scrollToHero}>
-          <HStack>
+          <HStack spacing={{ base: "-0.5vh" }} >
             {TbLetterComponents.map((Component, index) => (
               <Component key={index} color={colors[color]} />
             ))}
