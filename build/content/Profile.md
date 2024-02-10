@@ -3,11 +3,11 @@
 
 ## Header
 - Hi, my name is Lydia
-- I'm a software developer / UX designer
-- I live in Hong Kong!
+- I'm a software developer & UX designer
+- I currently live in Hong Kong but work remotely
 
 ## About
-I can speak the following machine languages: HTML, CSS, Javascript, C and Python. I can also speak the following human languages: English, French, Spanish and Russian.
+A linguist by background, I have a natural flair for expressive and targeted language, both human and computer.
 
 ## Contact
 Feel free to contact me on any of these platforms:

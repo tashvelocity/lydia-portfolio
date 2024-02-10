@@ -44,9 +44,15 @@ export default function Contact({ color }) {
             <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
             <Center>
               <HStack pt={4} spacing={4}>
-                <FaLinkedin onClick={linkedin} size={28} />
-                <FaGithub onClick={github} size={28} />
-                <FaEnvelope onClick={email} size={28} />
+                <Box _hover={{ color: `${color}.600`, stroke: "blue" }}>
+                  <FaLinkedin onClick={linkedin} size={28} color="currentColor" />
+                </Box>
+                <Box _hover={{ color: `${color}.600`, stroke: "blue" }}>
+                  <FaGithub onClick={github} size={28} color="currentColor" />
+                </Box>
+                <Box _hover={{ color: `${color}.600`, stroke: "blue" }}>
+                  <FaEnvelope onClick={email} size={28} color="currentColor" />
+                </Box>
               </HStack>
             </Center>
           </Stack>
