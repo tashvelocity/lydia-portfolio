@@ -5,34 +5,18 @@ import {
   Container,
   Box,
   HStack,
-  Button,
-  ButtonGroup,
   Card,
   CardBody,
-  Image,
   Heading,
   SimpleGrid,
-  Badge,
-  Link,
-  Center,
   UnorderedList,
   ListItem
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
-import { useState } from "react";
 import LanguagesArray from "./LanguagesArray";
-import TagsArray from "./TagsArray";
 
 export default function Languages({ color }) {
-    const languages = LanguagesArray();
-    const options = TagsArray("LanguagesTags");
-    
-    const [selected, setSelected] = useState("All");
-
-    const handleSelected = (value) => {
-      setSelected(value);
-    };
-    
+    const languages = LanguagesArray();     
   return (
     <>
       <Container maxW={"3xl"} id="languages">
@@ -53,13 +37,6 @@ export default function Languages({ color }) {
           </Stack>
           <SimpleGrid columns={[1, 2]} px={4} spacing={4}>
             {languages
-              .filter((language) => {
-                if (selected === "All") {
-                  return true;
-                } else {
-                  return language.tags.includes(selected);
-                }
-              })
               .map((language) => (
                 <Fade bottom>
                   <Card key={language.name}>
