@@ -7,6 +7,7 @@ import {
   Stack,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Contact from './Contact';
 import ProfileArray from "./ProfileArray";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
@@ -29,12 +30,10 @@ export default function Header({ color }) {
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 0, md: "15vh" }}
-          pt={{ base: 0, md: "15vh" }}
+          pt={{ base: 0, md: "20vh" }}
         >
           <Stack
             direction={"column"}
-            spacing={"2vh"}
             align={"center"}
             alignSelf={"center"}
             position={"relative"}
@@ -54,16 +53,17 @@ export default function Header({ color }) {
             </Heading>
             <Heading
               fontWeight={600}
-              fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+              fontSize={{ base: "1xl", sm: "2xl", md: "3xl" }}
               lineHeight={"110%"}
               color={`${color}.400`}
             >
             {profile.headerRole} <br />
             </Heading>
+            <Contact color={color} />
           </Stack>
+          
           <Stack
             direction={"column"}
-            pt={"5vh"}
             align={"center"}
             alignSelf={"center"}
             position={"relative"}

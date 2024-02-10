@@ -1,4 +1,10 @@
 import React from 'react';
+import {
+  Divider,
+  Stack,
+  Box,
+  Heading
+} from "@chakra-ui/react";
 import './App.css';
 import Nav from './components/NavBar';
 import Header from './components/Hero';
@@ -18,6 +24,14 @@ function App() {
       <About color={color} />
       <Languages color={color} />
       <Projects color={color} />
+      <Stack
+          as={Box}
+          textAlign={"center"}
+          spacing={{ base: 8, md: 14 }}
+        >
+        <Divider orientation="horizontal" />
+        <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
+      </Stack>
       <Contact color={color} />
       <Footer />
     </>

@@ -1,11 +1,8 @@
 import {
-  Divider,
   Stack,
-  Text,
   Container,
   Box,
   HStack,
-  Heading,
   Center,
 } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
@@ -29,19 +26,9 @@ export default function Contact({ color }) {
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 20, md: 36 }}
+          pb={{ base: "5vh"}}
         >
-          <Stack align="center" direction="row" p={4}>
-            <HStack mx={4}>
-              <Text color={`${color}.400`} fontWeight={800}>
-                04
-              </Text>
-              <Text fontWeight={800}>Contact</Text>
-            </HStack>
-            <Divider orientation="horizontal" />
-          </Stack>
           <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-            <Heading fontSize={"3xl"}>Let's stay in touch!</Heading>
             <Center>
               <HStack pt={4} spacing={4}>
                 <Box _hover={{ color: `${color}.600`, stroke: "blue" }}>
