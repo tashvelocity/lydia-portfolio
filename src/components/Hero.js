@@ -2,6 +2,7 @@ import {
   Box,
   Heading,
   Container,
+  Image,
   Text,
   Button,
   Stack,
@@ -30,35 +31,47 @@ export default function Header({ color }) {
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
           pb={{ base: 0, md: "15vh" }}
-          pt={{ base: 0, md: "30vh" }}
+          pt={{ base: 0, md: "15vh" }}
         >
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
-            lineHeight={"110%"}
-          >
-            {profile.headerName} <br />
-            <Text as={"span"} color={`${color}.400`}>
-              {profile.headerRole}
-            </Text>
-          </Heading>
-          <Text
-            color={useColorModeValue("gray.800", "gray.300")}
-            fontSize={{ base: "lg", sm: "xl", md: "2xl" }}
-          >
-            {profile.headerDesc}
-          </Text>
           <Stack
             direction={"column"}
-            spacing={3}
+            spacing={"2vh"}
             align={"center"}
             alignSelf={"center"}
             position={"relative"}
           >
-              <Button
+            <Image
+              borderRadius='full'
+              boxSize='xs'
+              src='assets/avatar.png'
+              alt='Lydia Welham'
+            />
+            <Heading
+              fontWeight={600}
+              fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+              lineHeight={"110%"}
+            >
+              {profile.headerName} <br />
+            </Heading>
+            <Heading
+              fontWeight={600}
+              fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
+              lineHeight={"110%"}
+              color={`${color}.400`}
+            >
+            {profile.headerRole} <br />
+            </Heading>
+          </Stack>
+          <Stack
+            direction={"column"}
+            pt={"5vh"}
+            align={"center"}
+            alignSelf={"center"}
+            position={"relative"}
+          >
+            <Button
               color={useColorModeValue("gray.800", "gray.300")}
               bg={useColorModeValue("gray.300", "gray.600")}
-              mt="15vh"
               rounded={"full"}
               px={6}
               _hover={{
