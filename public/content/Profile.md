@@ -1,19 +1,19 @@
 ## Site Name
-- Portable Portfolio
+- Lydia Welham
 
 ## Header
-- Hi, my name is Eldora. 
-- I'm a software engineer.
-- Short Description Here.
+- Hi, my name is Lydia
+- I'm a software developer & UX designer
+- I currently live in Hong Kong but work remotely
 
 ## About
-Write your "About" section here.
+A linguist by background, I have a natural flair for expressive and targeted language, both human and computer.
 
 ## Contact
-Write your "Contact" section here.
-- LinkedIn: https://linkedin.com/in/username
-- GitHub: https://github.com/username
-- Email: username@gmail.com
+Feel free to contact me on any of these platforms:
+- LinkedIn: https://www.linkedin.com/in/lydiawelham/
+- GitHub: https://github.com/lydiawelham
+- Email: lydiaewelham@gmail.com
 
 ## Logo
-- EB
+- LW

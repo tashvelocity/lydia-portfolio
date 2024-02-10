@@ -5,6 +5,7 @@ import {
   Container,
   Box,
   HStack,
+  useColorModeValue
 } from "@chakra-ui/react";
 import ProfileArray from "./ProfileArray";
 
@@ -17,7 +18,8 @@ export default function About({ color }) {
             as={Box}
             textAlign={"center"}
             spacing={{ base: 8, md: 14 }}
-            pb={{ base: 20, md: 36 }}
+            pt={{ base: 20, md: 20 }}
+            pb={{ base: 20, md: 20 }}
           >
             <Stack align="center" direction="row" px={4}>
               <HStack mx={4}>
@@ -28,7 +30,7 @@ export default function About({ color }) {
               </HStack>
               <Divider orientation="horizontal" />
             </Stack>
-            <Text color={"gray.600"} fontSize={"xl"} px={4}>
+            <Text color={useColorModeValue("gray.800", "gray.300")} fontSize={"xl"} px={4}>
               {profile.about}
             </Text>
           </Stack>

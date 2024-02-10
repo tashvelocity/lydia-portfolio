@@ -7,20 +7,17 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Languages from './components/Languages';
+import color from "./color";
 
 function App() {
-  // Available Colours:
-  // blue, cyan, gray, green, orange, pink, purple, red, teal, yellow
-
-  // edit this variable to change the color theme
-  const color = "teal";
 
   return (
     <>
       <Nav color={color} />
       <Header color={color} />
       <About color={color} />
-      <Experience color={color} />
+      <Languages color={color} />
       <Projects color={color} />
       <Contact color={color} />
       <Footer />

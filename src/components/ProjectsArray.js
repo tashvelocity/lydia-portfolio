@@ -9,21 +9,15 @@ const parseProjects = (mdContent) => {
 
     if (line.startsWith("## ")) {
       const name = line.substr(3).trim();
-      const description = lines[++i].trim();
       const imageLine = lines[++i];
       const image = imageLine.match(/!\[(.*)\]\((.*)\)/)[2];
       const tags = lines[++i].split(":")[1].trim();
       const badges = [];
       const buttons = [];
-
-      while (lines[++i] && !lines[i].startsWith("- Badges:")) {}
-      while (lines[++i] && lines[i].startsWith("  - ")) {
-        const badgeLine = lines[i].substr(4).split("[");
-        const badgeName = badgeLine[0].trim();
-        const badgeColor = badgeLine[1].split("]")[0].trim();
-        badges.push({ text: badgeName, colorScheme: badgeColor });
+      let description = "";
+      while (lines[++i] && !lines[i].startsWith("- Buttons:")) {
+        description += lines[i].trim() + "\n";
       }
-
       while (lines[++i] && lines[i].startsWith("  - ")) {
         const buttonLine = lines[i].substr(4).split("[");
         const buttonText = buttonLine[0].trim();

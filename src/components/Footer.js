@@ -4,8 +4,9 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  Link,
 } from "@chakra-ui/react";
-
+import { ExternalLinkIcon } from "@chakra-ui/icons";
 export default function Footer() {
   return (
     <Box
@@ -18,7 +19,7 @@ export default function Footer() {
         py={4}
         align="center"
       >
-        <Text>© 2023 Eldora Boo. All rights reserved</Text>
+      <Text>© 2024 Lydia Welham. Template by <Link href='https://github.com/eldoraboo/portable-portfolio' isExternal> Eldora Boo <ExternalLinkIcon mx='2px' /></Link></Text>
       </Container>
     </Box>
   );

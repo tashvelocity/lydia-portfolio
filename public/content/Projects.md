@@ -1,26 +1,13 @@
-## Project A
-Description
-- ![600x200](https://via.placeholder.com/600x200)
+## Beer Me That Episode
+- ![600x200](assets/beer-me.gif)
 - Tags: Category 1
-- Badges:
-  - Badge [blue]
+The Office (US) meme catalogue
 - Buttons:
   - Link [https://example.com]
 
-## Project B
-Description
-- ![600x200](https://via.placeholder.com/600x200)
+## Readability Assessor
+- ![600x200](assets/readability.png)
 - Tags: Category 2
-- Badges:
-  - Badge [blue]
-- Buttons:
-  - Link [https://example.com]
-
-## Project C
-Description
-- ![600x200](https://via.placeholder.com/600x200)
-- Tags: Category 3
-- Badges:
-  - Badge [blue]
+Test the reading level of your website text
 - Buttons:
   - Link [https://example.com]
