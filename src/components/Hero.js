@@ -3,7 +3,6 @@ import {
   Heading,
   Container,
   Image,
-  Text,
   Button,
   Stack,
   useColorModeValue,
