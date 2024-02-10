@@ -29,8 +29,8 @@ export default function Header({ color }) {
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          pb={{ base: 0, md: "25vh" }}
-          pt={{ base: 0, md: "25vh" }}
+          pb={{ base: 0, md: "15vh" }}
+          pt={{ base: 0, md: "30vh" }}
         >
           <Heading
             fontWeight={600}
