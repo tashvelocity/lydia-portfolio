@@ -6,17 +6,33 @@ import {
   Box,
   HStack,
   Button,
+  ButtonGroup,
   Card,
   CardBody,
   Image,
   Heading,
+  SimpleGrid,
   Badge,
+  Link,
+  Center,
+  UnorderedList,
+  ListItem
 } from "@chakra-ui/react";
 import { Fade } from "react-reveal";
+import { useState } from "react";
 import ProjectsArray from "./ProjectsArray";
+import TagsArray from "./TagsArray";
 
 export default function Projects({ color }) {
-    const projects = ProjectsArray();    
+    const projects = ProjectsArray();
+    const options = TagsArray("ProjectsTags");
+    
+    const [selected, setSelected] = useState("All");
+
+    const handleSelected = (value) => {
+      setSelected(value);
+    };
+    
   return (
     <>
       <Container maxW={"3xl"} id="projects">
