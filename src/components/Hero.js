@@ -29,8 +29,8 @@ export default function Header({ color }) {
         <Stack
           as={Box}
           textAlign={"center"}
-          spacing={{ base: 8, md: 14 }}
-          pt={{ base: 0, md: "20vh" }}
+          spacing={{ base: "2vh" }}
+          pt={{ base: "20vh" }}
         >
           <Stack
             direction={"column"}
@@ -67,6 +67,7 @@ export default function Header({ color }) {
             align={"center"}
             alignSelf={"center"}
             position={"relative"}
+            pt={{ base: "5vh" }}
           >
             <Button
               color={useColorModeValue("gray.800", "gray.300")}
